@@ -26,3 +26,13 @@ On October 7, 2026, we checked the entry’s Ed25519 signature against FABA’s 
 The owner retains the full report privately. Anyone given a copy can compute its SHA-256 and compare it with the public entry. We have not inspected that report or reproduced the benchmark. The signature check covers the signed entry, not the truth of the reported result, the author’s identity, or an independent timestamp. We have not independently confirmed its payment transaction on Base.
 
 This is one way to reference a report publicly without publishing the report itself. FABA documents Trust entries and separate Stamp digest receipts at 0.01 USDC each on Base. Trust reads are free; payments are non-refundable. Product instructions, current prices and limits: https://fabair-agents.com/llms.txt
+
+## AQC Measurement Edition: public release candidate
+
+AQC Measurement Edition 0.2.0rc2 is a downloadable Python source kit for bounded classical quantum-circuit simulation. Its JSON CLI/API returns Pauli expectations and seeded joint X/Y/Z measurement counts. The standalone download costs 3 USDC once on Base; payments are non-refundable.
+
+Buyers supply their own macOS or Linux worker with Python 3.12 and separately install NumPy 2.3.5 and psutil 7.2.2 in an isolated environment. Simulation runs offline after setup. The supervised interface accepts up to 64 qubits, 2,000 gates, 64 Pauli queries and 1,024 measurement shots, with an MPS bond limit of 64. These are input limits, not guarantees that every circuit finishes. Bond overflow refuses. Unsupported requests and execution limits can lead to refusal. Sampled memory monitoring is not a hard quota or sandbox; direct API callers need their own process supervision. No hosted compute or physical quantum hardware is included, and no quantum advantage or general speedup is promised.
+
+Paid end-to-end AQC purchase and delivery, and live Air-computer attachment, remain unverified. The exact-version buyer-use grant covers the buyer's own work; public redistribution and resale are not included.
+
+Current requirements, limits, buyer-use terms and purchase instructions: https://fabair-agents.com/llms.txt
